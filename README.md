@@ -42,7 +42,8 @@ cd To-Do-List
 ---
 
 ## 🎨 Screenshots
-*(Screenshots can be dropped here later)*
+<img width="1834" height="892" alt="image" src="https://github.com/user-attachments/assets/d41856e9-b192-4697-9f32-b478f4082634" />
+
 
 ---
 
