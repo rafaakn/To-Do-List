@@ -1,1 +1,137 @@
+/* ----------  RESET  ---------- */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", sans-serif;
+}
 
+/* ----------  BASE  ---------- */
+body {
+  background: #121212;
+  color: #eee;
+  max-width: 720px;
+  margin: 60px auto;
+  padding: 0 20px;
+}
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  letter-spacing: 1px;
+}
+
+/* ----------  INPUT ROW  ---------- */
+.input-row {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.input-row input[type="text"] {
+  flex: 1;
+  padding: 10px 14px;
+  border: 1px solid #333;
+  border-radius: 6px;
+  background: #1e1e1e;
+  color: #eee;
+}
+.input-row input[type="date"] {
+  width: 160px;
+  padding: 10px;
+  border: 1px solid #333;
+  border-radius: 6px;
+  background: #1e1e1e;
+  color: #eee;
+}
+.input-row button {
+  padding: 0 18px;
+  font-size: 24px;
+  border: none;
+  border-radius: 6px;
+  background: #00c853;
+  color: #121212;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.input-row button:hover {
+  background: #009624;
+}
+
+/* ----------  CONTROLS  ---------- */
+.controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.controls select {
+  padding: 8px 12px;
+  border: 1px solid #333;
+  border-radius: 6px;
+  background: #1e1e1e;
+  color: #eee;
+}
+.controls button.danger {
+  padding: 8px 14px;
+  border: none;
+  border-radius: 6px;
+  background: #ff5252;
+  color: #fff;
+  cursor: pointer;
+}
+.controls button.danger:hover {
+  background: #d50000;
+}
+
+/* ----------  TABLE  ---------- */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+th,
+td {
+  padding: 12px 14px;
+  text-align: left;
+}
+th {
+  background: #1e1e1e;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+tr {
+  border-bottom: 1px solid #333;
+}
+td button {
+  padding: 6px 10px;
+  border: none;
+  border-radius: 4px;
+  background: #ff5252;
+  color: #fff;
+  cursor: pointer;
+}
+td button:hover {
+  background: #d50000;
+}
+.status-badge {
+  padding: 4px 10px;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+.status-badge.open {
+  background: #2962ff;
+  color: #fff;
+}
+.status-badge.done {
+  background: #00c853;
+  color: #121212;
+}
+
+/* ----------  EMPTY  ---------- */
+#emptyMsg {
+  text-align: center;
+  margin-top: 40px;
+  color: #666;
+  font-size: 1.1rem;
+}
